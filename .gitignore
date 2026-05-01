@@ -141,3 +141,28 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ============================================
+# Custom Project Rules (Cursor + Workflow)
+# ============================================
+
+# Cursor-specific (AI editor artifacts)
+.cursor/cache/
+.cursor/tmp/
+
+# Additional local temp files
+tmp/
+temp/
+
+# OS noise
+.DS_Store
+
+# Ensure environment safety (already included above but reinforced)
+.env
+.env.*
+!.env.example
+
+# Optional: large assets (if needed later)
+# *.mp4
+# *.zip
+# *.tar
